@@ -16,6 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".notification.NotificationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".receiver.ReceiverActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".servicedemo.ServiceActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
