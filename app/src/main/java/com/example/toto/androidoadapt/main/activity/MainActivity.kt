@@ -33,9 +33,9 @@ class MainActivity : AppCompatActivity() {
     private fun initView() {
         mAdapter = MainListAdapter(this, mMainList, { _, i ->
             when (i) {
-                0 -> startActivity(Intent(this, ServiceActivity::class.java))
+                0 -> startActivity(Intent(this, ReceiverActivity::class.java))
                 1 -> startActivity(Intent(this, NotificationActivity::class.java))
-                2 -> startActivity(Intent(this, ReceiverActivity::class.java))
+                2 -> startActivity(Intent(this, ServiceActivity::class.java))
             }
         })
         main_list.layoutManager = LinearLayoutManager(this)

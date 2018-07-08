@@ -21,10 +21,16 @@
             android:name=".notification.NotificationActivity"
             android:screenOrientation="portrait" />
 
-        <activity android:name=".receiver.ReceiverActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".servicedemo.ServiceActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".receiver.ReceiverActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".servicedemo.ServiceActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".servicedemo.jobservice.JobDemoService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
     </application>
 
 </manifest>
